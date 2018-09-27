@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+</head>
+<body>
+{% block content %}
+
+<h1>Dashboard....!</h1>
+<h2>Welcome. {{name}}</h2>
+<br>
+middle name :- {{middle_name}} <br>
+phone :- {{phone}} <br>
+<form method="post">
+    {% csrf_token %}
+<input type="submit" name="submit" value="Logout" id="Logout">
+</form>
+{% endblock %}
+
+</body>
+</html>

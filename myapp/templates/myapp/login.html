@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+<body>
+
+{% block content %}
+  <h2>Login</h2>
+  {{msg}}
+  <form method="post">
+    {% csrf_token %}
+
+    name :- <input type="text" name="name">
+           <br>
+    password:- <input type="text" name="passw">
+             <br>
+    <input type="submit" name="submit" value="Login">
+  </form>
+{% endblock %}
+</body>
+</html>
